@@ -1,0 +1,123 @@
+body {
+  font-family: sans-serif;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+}
+.cloud-icon-move {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+}
+.move1 {
+  animation: move1 8s infinite;
+}
+@keyframes move1 {
+  0% {
+    left: 0px;
+    top: 10px;
+  }
+
+  100% {
+    left: 100%;
+    top: 0px;
+  }
+}
+.move2 {
+  animation: move2 12s infinite;
+}
+@keyframes move2 {
+  0% {
+    left: 20px;
+    top: 10rem;
+  }
+
+  100% {
+    left: 100%;
+    top: 10rem;
+  }
+}
+.move3 {
+  animation: move3 6s infinite;
+}
+@keyframes move3 {
+  0% {
+    left: 20px;
+    top: 5rem;
+  }
+
+  100% {
+    left: 100%;
+    top: 5rem;
+  }
+}
+.hero-container {
+  width: 70%;
+  margin: auto;
+  height: 25rem;
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  position: relative;
+}
+.hero-item1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-shadow: 3px 3px 10px white;
+}
+.today-content {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.hero-item1:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 30px white;
+  margin: -10px;
+  z-index: 1;
+  border-radius: 2rem;
+}
+.hero-item1-box:hover {
+  cursor: pointer;
+  text-shadow: 1px 2px 10px white;
+}
+.cloud-icon-blue:hover {
+  color: rgb(142, 142, 237);
+  cursor: pointer;
+  text-shadow: 1px 1px 10px rgb(243, 238, 238);
+}
+.cloud-icon-green:hover {
+  color: rgb(85, 173, 85);
+  cursor: pointer;
+  text-shadow: 1px 1px 10px white;
+}
+.hero-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 3rem 0;
+  color: white;
+  font-size: 2rem;
+  border: 3px solid white;
+  background-image: linear-gradient(to bottom, #b6dae0, #87bcc5, #a3859e);
+}
+.cloud-icon {
+  font-size: 3.5rem;
+  margin: 2px;
+}
+.cloud-icon:hover {
+  font-size: 4rem;
+}
+.span {
+  font-size: 1.2rem;
+  position: relative;
+}
+.hero-item1-o {
+  font-size: 10px;
+  position: absolute;
+}
+.sup-o {
+  font-size: 10px;
+  position: relative;
+  top: -6px;
+}
